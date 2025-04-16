@@ -10,13 +10,15 @@ This project aims to develop a custom Web Application Firewall (WAF) using ModSe
 ✔️ Firewall Configurations – Basic setup using iptables/firewalld
 ✔️ Future Enhancements – Custom rule modifications and security testing
 
-🛠 Technologies Used
-ModSecurity – Open-source WAF for HTTP request filtering
-OWASP Core Rule Set (CRS) – Predefined security rules for common threats
-Ubuntu (Linux OS) – Deployment environment for the WAF
-Apache/Nginx – Web servers to integrate with ModSecurity
-iptables/firewalld – Basic firewall configuration
-Git & GitHub – Version control and collaboration
+## 🔧 Technologies Used
+
+- **ModSecurity** – Open-source WAF for HTTP request filtering  
+- **OWASP Core Rule Set (CRS)** – Predefined rules for common threats  
+- **Ubuntu (Linux OS)** – Deployment environment for the WAF  
+- **Apache/Nginx** – Web servers to integrate with ModSecurity  
+- **iptables/firewalld** – Basic firewall configuration  
+- **Git & GitHub** – Version control and collaboration  
+
 
 📦 Installation
 Requirements
