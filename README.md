@@ -40,4 +40,26 @@ Before starting the installation, ensure you have the following:
 - **Sudo** privileges  
 - **OWASP Core Rule Set**  
   If the rule set is already installed, the process becomes easier.  
-  However, full installation instructions are available in our repository under `docs/INSTALL.md`, or
+  However, full installation instructions are available in our repository under `docs/INSTALL.md`, or you can refer to the official [OWASP CRS documentation](https://coreruleset.org/installation/) for the extended setup guide.
+
+---
+
+### 🧱 Installation Process
+
+To use our custom version of the ModSecurity WAF:
+
+1. Download the following files from our GitHub repository:
+   - `custom-rules.conf`  
+   - `common-passwords.txt`
+
+2. Place them into the appropriate directories:
+   - `custom-rules.conf` → inside the **rules** folder of the OWASP CRS setup  
+   - `common-passwords.txt` → in the **parent directory** of the rules folder  
+
+3. Assign the correct ownership and permissions:
+
+```bash
+sudo chown www-data:www-data custom-rules.conf
+sudo chown www-data:www-data common-passwords.txt
+sudo chmod 644 custom-rules.conf
+sudo chmod 644 common-passwords.txt
